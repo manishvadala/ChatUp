@@ -8,10 +8,16 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
-    <title>$Title$</title>
-  </head>ec2-user
+    <title>Welcome to ChatUp</title>
+  </head>
   <body>
-  Hello, World!
-  This is Max
+  <table align="center">
+      <tr>
+          <td><a href="login">Login</a>
+          </td>
+          <td><a href="register">Register</a>
+          </td>
+      </tr>
+  </table>
   </body>
 </html>
