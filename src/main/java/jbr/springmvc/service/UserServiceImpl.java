@@ -1,24 +1,28 @@
 package jbr.springmvc.service;
 
+import jbr.springmvc.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import jbr.springmvc.dao.UserDao;
 import jbr.springmvc.model.Login;
 import jbr.springmvc.model.User;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service(value = "userService")
+@Transactional
 public class UserServiceImpl implements UserService {
 
     @Autowired
-    public UserDao userDao;
+    public UserRepository userRepository;
 
+    @Override
     public void register(User user) {
-        userDao.register(user);
+        userRepository.createUser(user);
     }
 
+    @Override
     public User validateUser(Login login) {
-        return userDao.validateUser(login);
+        return userRepository.validateUser(login);
     }
 
 }

@@ -1,14 +1,37 @@
 package jbr.springmvc.model;
 
+import org.hibernate.validator.constraints.NotEmpty;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "users")
 public class User {
 
+    @Id
+    @Column(name = "username", nullable = false)
     private String username;
+
+    @Column(name = "password", nullable = false)
     private String password;
+
+    @NotEmpty
     private String firstname;
+
+    @NotEmpty
     private String lastname;
+
+    @NotEmpty
     private String email;
+
+    @NotEmpty
     private String address;
-    private int phone;
+
+    @NotEmpty
+    private String phone;
 
     public String getUsername() {
         return username;
@@ -58,11 +81,11 @@ public class User {
         this.address = address;
     }
 
-    public int getPhone() {
+    public String getPhone() {
         return phone;
     }
 
-    public void setPhone(int phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 

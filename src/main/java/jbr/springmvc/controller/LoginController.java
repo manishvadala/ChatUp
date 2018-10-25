@@ -15,10 +15,11 @@ import jbr.springmvc.model.User;
 import jbr.springmvc.service.UserService;
 
 @Controller
+@RequestMapping(value = "/")
 public class LoginController {
 
     @Autowired
-    UserService userService;
+    private UserService userService;
 
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public ModelAndView showLogin(HttpServletRequest request, HttpServletResponse response) {
@@ -33,6 +34,7 @@ public class LoginController {
                                      @ModelAttribute("login") Login login) {
         ModelAndView mav = null;
 
+        System.out.println("Login UserName: " + login.getUsername());
         User user = userService.validateUser(login);
 
         if (null != user) {
