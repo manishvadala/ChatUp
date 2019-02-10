@@ -1,4 +1,4 @@
-package jbr.springmvc.config;
+package max.springmvc.config;
 
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,7 +37,7 @@ public class InfrastructureConfig {
     public LocalSessionFactoryBean sessionFactory() {
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
         sessionFactory.setDataSource(dataSource());
-        sessionFactory.setPackagesToScan(new String[] {"jbr.springmvc.model"});
+        sessionFactory.setPackagesToScan(new String[] {"max.springmvc.model"});
         sessionFactory.setHibernateProperties(hibernateProperties());
         return sessionFactory;
     }

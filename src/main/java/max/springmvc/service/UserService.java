@@ -1,7 +1,7 @@
-package jbr.springmvc.service;
+package max.springmvc.service;
 
-import jbr.springmvc.model.Login;
-import jbr.springmvc.model.User;
+import max.springmvc.model.Login;
+import max.springmvc.model.User;
 import org.springframework.context.annotation.Bean;
 
 public interface UserService {

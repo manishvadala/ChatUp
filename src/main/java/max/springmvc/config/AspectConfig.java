@@ -1,4 +1,4 @@
-package jbr.springmvc.config;
+package max.springmvc.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;

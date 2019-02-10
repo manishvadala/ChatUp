@@ -1,4 +1,4 @@
-package jbr.springmvc.controller;
+package max.springmvc.controller;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import jbr.springmvc.model.Login;
-import jbr.springmvc.model.User;
-import jbr.springmvc.service.UserService;
+import max.springmvc.model.Login;
+import max.springmvc.model.User;
+import max.springmvc.service.UserService;
 
 @Controller
 @RequestMapping(value = "/")

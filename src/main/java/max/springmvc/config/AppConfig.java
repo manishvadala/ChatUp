@@ -1,7 +1,7 @@
-package jbr.springmvc.config;
+package max.springmvc.config;
 
-import jbr.springmvc.service.UserService;
-import jbr.springmvc.service.UserServiceImpl;
+import max.springmvc.service.UserService;
+import max.springmvc.service.UserServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Import;
 
 @Configuration
 @Import(value = {AspectConfig.class,InfrastructureConfig.class,WebConfig.class})
-@ComponentScan(basePackages="jbr.springmvc")
+@ComponentScan(basePackages="max.springmvc")
 public class AppConfig {
 
     @Bean

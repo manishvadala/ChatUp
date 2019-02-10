@@ -1,4 +1,4 @@
-package jbr.springmvc.model;
+package max.springmvc.model;
 
 import org.hibernate.validator.constraints.NotEmpty;
 

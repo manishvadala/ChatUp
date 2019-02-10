@@ -1,4 +1,4 @@
-package jbr.springmvc.repository;
+package max.springmvc.repository;
 
 import java.io.Serializable;
 

@@ -1,4 +1,4 @@
-package jbr.springmvc.config;
+package max.springmvc.config;
 
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;

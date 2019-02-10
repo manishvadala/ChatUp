@@ -1,10 +1,10 @@
-package jbr.springmvc.service;
+package max.springmvc.service;
 
-import jbr.springmvc.repository.UserRepository;
+import max.springmvc.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import jbr.springmvc.model.Login;
-import jbr.springmvc.model.User;
+import max.springmvc.model.Login;
+import max.springmvc.model.User;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

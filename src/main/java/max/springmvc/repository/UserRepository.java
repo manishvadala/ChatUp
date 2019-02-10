@@ -1,7 +1,7 @@
-package jbr.springmvc.repository;
+package max.springmvc.repository;
 
-import jbr.springmvc.model.Login;
-import jbr.springmvc.model.User;
+import max.springmvc.model.Login;
+import max.springmvc.model.User;
 
 public interface UserRepository {
 
